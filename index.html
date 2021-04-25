@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Start of Head -->
+
+<head>
+
+    <!-- Meta Tags -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="To-Do List created by AJ Kilmurray for the purpose of building upon JavaScript skills.">
+    <meta name="robots" content="index, follow">
+
+    <!-- Page Title -->
+    <title>To-Do List</title>
+
+    <!-- CSS Stylesheet -->
+    <link rel="stylesheet" href="assets/style/style.css" type="text/css">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&family=Raleway:wght@300&display=swap" rel="stylesheet">
+
+</head>
+
+<!-- End of Head -->
+
+
+
+<!-- Start of Body -->
+
+<body>
+
+    <!-- Main -->
+    
+    <main id="main">
+
+        <!-- Main Section -->
+
+        <section class="main-content">
+
+            <!-- Container -->
+
+            <div class="container">
+
+                <!-- Buttons, Input & Header Container -->
+
+                <article class="todo-creation">
+
+                    <!-- Header/Title -->
+
+                    <header id="header">
+
+                        <h1 class="header-text">To-Do List</h1>
+
+                    </header>
+
+                    <!-- Form Container -->
+
+                    <div class="todo-input">
+
+                        <!-- Form for all buttons -->
+
+                        <form id="form">
+
+                            <!-- Input -->
+                            <input id="text-field" type="text" name="text" placeholder="Add to your to-do list!" onkeypress="return event.keyCode != 13;" class="formItem" autocomplete="off">
+                            <!-- Add Item -->
+                            <button id="submit" type="button" value="submit" class="formItem">Add Item</button>
+                            <!-- Remove Item -->
+                            <button id="clearItems" type="button" class="formItem">Remove Item</button>
+                            <!-- Clear List -->
+                            <button id="clearList" type="button" class="formItem">Clear List</button>
+
+                        </form>
+
+                    </div>
+
+                </article>
+
+            </div>
+
+        </section>
+
+        <!-- End of Main Section -->
+
+
+
+        <!-- Output Container -->
+
+        <section class="list-output">
+
+            <!-- Container -->
+
+            <div class="container">
+
+                <!-- To-Do List container -->
+
+                <article class="todo-list">
+
+                    <!-- To-Do List -->
+
+                    <ol class="output">
+
+                        <!-- Generated List Items -->
+
+                    </ol>
+
+                </article>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <!-- JavaScript File -->
+    <script src="/assets/js/main.js" type="module"></script>
+
+</body>
+
+<!-- End of Body -->
+
+
+
+<!-- 
+    
+Created by AJKilmurray
+
+https://twitter.com/AJKilmurray
+https://github.com/AJKilmurray
+ajkilmurray@gmail.com
+
+-->
+
+</html>

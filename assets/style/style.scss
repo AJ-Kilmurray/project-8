@@ -1,0 +1,161 @@
+$fonts: Raleway,
+Poppins,
+Roboto,
+Arial,
+Helvetica,
+Sans-Serif;
+$black: #000;
+$white: #fff;
+$orange: rgb(255, 77, 13);
+
+@mixin body-background-color {
+    background: #e44d26;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #e44d26, #f16529);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #e44d26, #f16529);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+@mixin submit-background-color {
+    background: rgb(41, 154, 11);
+}
+
+@mixin clearItem-background-color {
+    background: rgb(255, 26, 0);
+}
+
+@mixin clearList-background-color {
+    background: rgb(64, 150, 238);
+}
+
+@mixin grey {
+    background: rgb(96, 108, 136);
+    /* Old browsers */
+    background: -moz-linear-gradient(-45deg, rgba(96, 108, 136, 1) 0%, rgba(63, 76, 107, 1) 100%);
+    /* FF3.6-15 */
+    background: -webkit-linear-gradient(-45deg, rgba(96, 108, 136, 1) 0%, rgba(63, 76, 107, 1) 100%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(135deg, rgba(96, 108, 136, 1) 0%, rgba(63, 76, 107, 1) 100%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#606c88', endColorstr='#3f4c6b', GradientType=1);
+    /* IE6-9 fallback on horizontal gradient */
+}
+
+@mixin output-background-color {
+    background: rgb(253, 255, 255);
+    /* Old browsers */
+    background: -moz-linear-gradient(-45deg, rgba(253, 255, 255, 1) 0%, rgba(225, 255, 255, 1) 0%, rgba(225, 255, 255, 1) 7%, rgba(225, 255, 255, 1) 12%, rgba(230, 248, 253, 1) 30%, rgba(200, 238, 251, 1) 54%, rgba(190, 228, 248, 1) 75%, rgba(177, 216, 245, 1) 100%);
+    /* FF3.6-15 */
+    background: -webkit-linear-gradient(-45deg, rgba(253, 255, 255, 1) 0%, rgba(225, 255, 255, 1) 0%, rgba(225, 255, 255, 1) 7%, rgba(225, 255, 255, 1) 12%, rgba(230, 248, 253, 1) 30%, rgba(200, 238, 251, 1) 54%, rgba(190, 228, 248, 1) 75%, rgba(177, 216, 245, 1) 100%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(135deg, rgba(253, 255, 255, 1) 0%, rgba(225, 255, 255, 1) 0%, rgba(225, 255, 255, 1) 7%, rgba(225, 255, 255, 1) 12%, rgba(230, 248, 253, 1) 30%, rgba(200, 238, 251, 1) 54%, rgba(190, 228, 248, 1) 75%, rgba(177, 216, 245, 1) 100%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fdffff', endColorstr='#b1d8f5', GradientType=1);
+    /* IE6-9 fallback on horizontal gradient */
+}
+
+* {
+
+    list-style: none;
+    list-style-position: inside;
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+    font-family: $fonts;
+
+}
+
+input {
+    color: $black;
+}
+
+body {
+
+    @include body-background-color();
+
+    .main-content {
+        margin-top: 50px;
+    }
+
+    .container {
+        width: 80%;
+        margin: auto;
+        overflow: hidden;
+    }
+
+    .todo-creation {
+        @include grey();
+        border-top-left-radius: 90px;
+        border-top-right-radius: 90px;
+        border-bottom: 3px solid $black;
+    }
+
+    #header {
+        display: flex;
+        justify-content: center;
+        padding-top: 10px;
+        padding-bottom: 15px;
+
+        .header-text {
+            color: $white;
+            text-shadow: 2px 2px 25px $orange;
+            font-size: 48px;
+        }
+    }
+
+    .todo-input {
+        display: flex;
+
+        #form {
+            width: 100%;
+            display: flex;
+
+            #text-field {
+                flex: 7;
+                text-align: center;
+                border: none;
+            }
+
+            #submit {
+                flex: 2;
+                @include submit-background-color();
+            }
+
+            #clearItems {
+                flex: 2;
+                @include clearItem-background-color();
+            }
+
+            #clearList {
+                flex: 2;
+                @include clearList-background-color();
+            }
+
+            .formItem {
+                padding: 20px 0px;
+                font-size: 20px;
+                border-radius: 0px;
+                border: none;
+            }
+        }
+    }
+}
+
+.todo-list {
+    padding-top: 10px;
+    margin: auto;
+
+    .output {
+
+        @include output-background-color();
+        margin-bottom:50px;
+
+        .listItems {
+            padding: 20px 0px;
+            font-size: 32px;
+            width: 100%;
+            border-bottom: 1px solid $black;
+        }
+    }
+}

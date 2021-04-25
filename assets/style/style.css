@@ -1,0 +1,136 @@
+* {
+  list-style: none;
+  list-style-position: inside;
+  text-decoration: none;
+  margin: 0;
+  padding: 0;
+  font-family: Raleway, Poppins, Roboto, Arial, Helvetica, Sans-Serif;
+}
+
+input {
+  color: #000;
+}
+
+body {
+  background: #e44d26;
+  /* fallback for old browsers */
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: -webkit-gradient(linear, left top, right top, from(#e44d26), to(#f16529));
+  background: linear-gradient(to right, #e44d26, #f16529);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+body .main-content {
+  margin-top: 50px;
+}
+
+body .container {
+  width: 80%;
+  margin: auto;
+  overflow: hidden;
+}
+
+body .todo-creation {
+  background: #606c88;
+  /* Old browsers */
+  /* FF3.6-15 */
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(135deg, #606c88 0%, #3f4c6b 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#606c88', endColorstr='#3f4c6b', GradientType=1);
+  /* IE6-9 fallback on horizontal gradient */
+  border-top-left-radius: 90px;
+  border-top-right-radius: 90px;
+  border-bottom: 3px solid #000;
+}
+
+body #header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-top: 10px;
+  padding-bottom: 15px;
+}
+
+body #header .header-text {
+  color: #fff;
+  text-shadow: 2px 2px 25px #ff4d0d;
+  font-size: 48px;
+}
+
+body .todo-input {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+body .todo-input #form {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+body .todo-input #form #text-field {
+  -webkit-box-flex: 7;
+      -ms-flex: 7;
+          flex: 7;
+  text-align: center;
+  border: none;
+}
+
+body .todo-input #form #submit {
+  -webkit-box-flex: 2;
+      -ms-flex: 2;
+          flex: 2;
+  background: #299a0b;
+}
+
+body .todo-input #form #clearItems {
+  -webkit-box-flex: 2;
+      -ms-flex: 2;
+          flex: 2;
+  background: #ff1a00;
+}
+
+body .todo-input #form #clearList {
+  -webkit-box-flex: 2;
+      -ms-flex: 2;
+          flex: 2;
+  background: #4096ee;
+}
+
+body .todo-input #form .formItem {
+  padding: 20px 0px;
+  font-size: 20px;
+  border-radius: 0px;
+  border: none;
+}
+
+.todo-list {
+  padding-top: 10px;
+  margin: auto;
+}
+
+.todo-list .output {
+  background: #fdffff;
+  /* Old browsers */
+  /* FF3.6-15 */
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(135deg, #fdffff 0%, #e1ffff 0%, #e1ffff 7%, #e1ffff 12%, #e6f8fd 30%, #c8eefb 54%, #bee4f8 75%, #b1d8f5 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fdffff', endColorstr='#b1d8f5', GradientType=1);
+  /* IE6-9 fallback on horizontal gradient */
+  margin-bottom: 50px;
+}
+
+.todo-list .output .listItems {
+  padding: 20px 0px;
+  font-size: 32px;
+  width: 100%;
+  border-bottom: 1px solid #000;
+}
+/*# sourceMappingURL=style.css.map */
