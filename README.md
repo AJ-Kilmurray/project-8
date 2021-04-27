@@ -1,5 +1,5 @@
 # Overview
-Basic To-Do List created using SASS &amp; JavaScript for the purpose of building on JavaScript skills.
+Basic To-Do List created using SASS &amp; JavaScript for the purpose of building on JavaScript skills. HTML & CSS/Design was not a focus.
 
 ## Description
 The goal of this task was to understand some new concepts and to develop a stronger understanding of the DOM and JavaScript.
